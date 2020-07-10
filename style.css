@@ -1,0 +1,348 @@
+/*Strip the ul of padding and list styling*/
+ul {
+    list-style-type:none;
+    margin:0;
+    padding:0;
+    position: absolute;
+	
+	
+}
+/*Create a horizontal list with spacing*/
+li {
+    display:inline-block;
+    float: left;
+    margin-right: 1.5px;
+}
+/*Style for menu links*/
+li a {
+    display:block;
+    min-width:9px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #fff;
+    background: #0000e6;
+    text-decoration: none;
+	padding:0px 63px;
+	
+}
+/*Hover state for top level links*/
+li:hover  {
+    background: #e6e6e6;
+	
+}
+li:hover a {
+    background: #ff4d4d;
+	
+}
+/*Style for dropdown links*/
+li:hover ul a {
+    background: #f3f3f3;
+    color: #2f3036;
+    height: 40px;
+    line-height: 40px;
+}
+/*Hover state for dropdown links*/
+li:hover ul a:hover {
+    background: ;
+    color: #ff4d4d;
+}
+/*Hide dropdown links until they are needed*/
+li ul {
+    display: none;
+}
+/*Make dropdown links vertical*/
+li ul li {
+    display: block;
+    float: none;
+}
+/*Prevent text wrapping*/
+li ul li a {
+    width: auto;
+    min-width: 100px;
+    padding: 0 20px;
+}
+/*Display the dropdown on hover*/
+ul li a:hover + .hidden, .hidden:hover {
+    display: block;
+}
+/*Style 'show menu' label button and hide it by default*/
+.show-menu {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-decoration: none;
+    color: #fff;
+    background: #19c589;
+    text-align: center;
+    padding: 10px 0;
+    display: none;
+}
+}
+/*Show menu when invisible checkbox is checked*/
+input[type=checkbox]:checked ~ #menu{
+    display: block;
+}
+/*Responsive Styles*/
+@media screen and (max-width : 760px){
+    /*Make dropdown links appear inline*/
+    ul {
+        position: static;
+        display: none;
+    }
+    /*Create vertical spacing*/
+    li {
+        margin-bottom: 1px;
+    }
+    /*Make all menu links full width*/
+    ul li, li a {
+        width: 100%;
+    }
+    /*Display 'show menu' link*/
+    .show-menu {
+        display:block;
+    }
+}
+
+
+
+
+/*styletag grid and div*/
+.a{
+	padding-bottom:50px;
+	
+	}
+	
+.item1{grid-area:div1;}
+.item2{grid-area:div2;}
+.item3{grid-area:div3;}
+.item4{grid-area:div4;}
+
+.grid-container
+{
+display:grid;
+grid-gap:0px;
+grid-template-areas:
+'div1 div2 div3 div4'
+
+}
+.grid-container>div
+{
+background-color:white;
+color:black;
+font-family:arial;
+font-size:15px;
+text-align:left;
+padding:10px;
+
+}
+
+
+
+#rcorners1 {
+    border-radius: 10px;
+    border: 2px solid #1E90FF;
+    padding: 20px; 
+    width: 250px;
+    height: 130px;
+font-size:24px;
+color:	#1E90FF;
+font-style:ariel;
+line-height:0px;
+}
+
+.ab{
+position:relative;
+top:0px;
+right:-120px;
+
+
+}
+
+.item11{grid-area:div1;}
+.item21{grid-area:div2;}
+.item31{grid-area:div3;}
+.item41{grid-area:div4;}
+.item51{grid-area:div5;}
+.item61{grid-area:div6;}
+.item62{grid-area:div7;}
+.item63{grid-area:div8;}
+.item64{grid-area:div9;}
+.item65{grid-area:div10;}
+.item66{grid-area:div11;}
+.item67{grid-area:div12;}
+.item68{grid-area:div13;}
+.item69{grid-area:div14;}
+.item70{grid-area:div15;}
+
+.grid-container1
+{
+display:grid;
+grid-gap:0px;
+grid-template-areas:
+'div1 div2 div3'
+'div4 div5 div6'
+'div7 div8 div9'
+'div10 div11 div12'
+'div13 div14 div15'
+}
+.grid-container1>div
+{
+background-color:yellow;
+color:black;
+font-family:arial;
+font-size:15px;
+text-align:left;
+padding:0px;
+
+}
+#rcorners11 {
+    border-radius: 10px;
+    border: 2px solid #e6e5b5;
+    padding: 0px; 
+    width: 400px;
+    height: 250px;
+
+}
+
+
+
+
+
+.button1 {
+    position: relative;
+    top: 55px;
+    left:55px ;
+	text-decoration:none;
+    
+    background-color:#73AD21;
+    color: white;
+	text-decoration:none;
+    
+    padding: 10px 10px;
+    border:none;
+    cursor: pointer;
+    border-radius: 50px;
+    text-align: center;
+}
+
+
+
+
+.button {
+    position: relative;
+    top: 55px;
+    left:45px ;
+	text-decoration:none;
+    
+    background-color:#1E90FF;
+    color: white;
+	text-decoration:none;
+    
+    padding: 10px 10px;
+    border:none;
+    cursor: pointer;
+    border-radius: 50px;
+    text-align: center;
+}
+
+/*search*/
+
+
+.centered {
+    position: absolute;
+    top: 40%;
+    right: -5%;
+    transform: translate(-50%, -50%);
+	}
+	.select {
+    
+    margin: 4px 0;
+    display: inline-block;
+    border: 2px solid #ccc;
+    border-radius: 14px;
+	padding:0px;
+    box-sizing: border-box;
+	width:200px;
+}
+
+
+
+
+.item691{grid-area:div211;}
+.item692{grid-area:div212;}
+	.grid-container123
+{
+display:grid;
+grid-gap:0px;
+grid-template-areas:
+'div211 div212'
+
+}
+.grid-container123>div
+{
+background-color:#e6e6d0;
+color:black;
+font-family:arial;
+font-size:15px;
+text-align:left;
+padding:0px;
+
+}
+	
+	.search_btn
+	{
+	position: relative;
+    top: 0px;
+    left:10px ;
+	text-decoration:none;
+    
+    background-color:#cc9900;
+    color: white;
+	text-decoration:none;
+    
+    padding: 10px 10px;
+    border:none;
+    cursor: pointer;
+    border-radius: 15px;
+    text-align: center;
+	
+	
+	
+	}
+.centered {
+    position: absolute;
+    top: 40%;
+    right: -5%;
+    transform: translate(-50%, -50%);
+	}
+	.select {
+    
+    margin: 4px 0;
+    display: inline-block;
+    border: 2px solid #ccc;
+    border-radius: 14px;
+	padding:0px;
+    box-sizing: border-box;
+	width:100px;
+}
+	
+	.search_btn
+	{
+	position: relative;
+    top: 0px;
+    left:10px ;
+	text-decoration:none;
+    
+    background-color:#cc9900;
+    color: white;
+	text-decoration:none;
+    
+    padding: 10px 10px;
+    border:none;
+    cursor: pointer;
+    border-radius: 15px;
+    text-align: center;
+		
+	}
+	
+
